@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: shopify
+    database: broses-music-dw
+    schema: shopify
+    tables:
+      - name: order

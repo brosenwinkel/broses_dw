@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: google_sheets
+    database: broses-music-dw
+    schema: google_sheets
+    tables:
+      - name: bluevine
+      - name: distrokid

@@ -1,0 +1,130 @@
+[0m10:32:55.107307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103cc5010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b1bc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b1bb10>]}
+
+
+============================== 10:32:55.109751 | f701c5ff-cf0b-4ed2-8b38-dddff5b4c1b4 ==============================
+[0m10:32:55.109751 [info ] [MainThread]: Running with dbt=1.9.2
+[0m10:32:55.110040 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/bryant/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init dbt_broses_dw', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:32:55.117657 [debug] [MainThread]: Starter project path: /Users/bryant/Projects/venvs/venv_broses_dw/lib/python3.13/site-packages/dbt/include/starter_project
+[0m10:32:55.121598 [info ] [MainThread]: 
+Your new dbt project "dbt_broses_dw" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:32:55.121768 [info ] [MainThread]: Setting up your profile.
+[0m10:42:52.073692 [info ] [MainThread]: Profile dbt_broses_dw written to /Users/bryant/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:42:52.095138 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 597.0271, "process_in_blocks": "0", "process_kernel_time": 0.201265, "process_mem_max_rss": "190840832", "process_out_blocks": "0", "process_user_time": 0.809248}
+[0m10:42:52.095634 [debug] [MainThread]: Command `dbt init` succeeded at 10:42:52.095539 after 597.03 seconds
+[0m10:42:52.095905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134448a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a3ca70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133f6470>]}
+[0m10:42:52.096174 [debug] [MainThread]: Flushing usage events
+[0m10:42:52.332057 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:43:00.820522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079d5010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10882bc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10882bb10>]}
+
+
+============================== 10:43:00.822962 | 6a32d47c-a388-4948-8819-17140c5d4425 ==============================
+[0m10:43:00.822962 [info ] [MainThread]: Running with dbt=1.9.2
+[0m10:43:00.823253 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/bryant/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m10:43:00.830499 [info ] [MainThread]: dbt version: 1.9.2
+[0m10:43:00.830692 [info ] [MainThread]: python version: 3.13.1
+[0m10:43:00.830827 [info ] [MainThread]: python path: /Users/bryant/Projects/venvs/venv_broses_dw/bin/python3.13
+[0m10:43:00.830933 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit-Mach-O
+[0m10:43:00.833680 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m10:43:01.299551 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.postgres'
+[0m10:43:01.300135 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.postgres'
+[0m10:43:01.300336 [info ] [MainThread]: Using profiles dir at /Users/bryant/.dbt
+[0m10:43:01.300471 [info ] [MainThread]: Using profiles.yml file at /Users/bryant/.dbt/profiles.yml
+[0m10:43:01.300597 [info ] [MainThread]: Using dbt_project.yml file at /Users/bryant/Projects/repositories/broses_dw/dbt_project.yml
+[0m10:43:01.300722 [info ] [MainThread]: Configuration:
+[0m10:43:01.300839 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:43:01.300943 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:43:01.301048 [info ] [MainThread]: Required dependencies:
+[0m10:43:01.301189 [debug] [MainThread]: Executing "git --help"
+[0m10:43:01.309494 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:43:01.310069 [debug] [MainThread]: STDERR: "b''"
+[0m10:43:01.310261 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:43:01.310460 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m10:43:01.310724 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m10:43:01.310893 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_bootcamp", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "jaffle_shop", target "dev" invalid: Runtime Error
+    Could not find adapter type postgres!
+
+Runtime Error
+  Credentials in profile "my_dbt_project", target "dev" invalid: Runtime Error
+    Could not find adapter type postgres!
+
+
+[0m10:43:01.311025 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/bryant/Projects/repositories/broses_dw/dbt_project.yml> not found
+
+[0m10:43:01.312101 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.5218405, "process_in_blocks": "0", "process_kernel_time": 0.160893, "process_mem_max_rss": "189841408", "process_out_blocks": "0", "process_user_time": 0.81482}
+[0m10:43:01.312329 [debug] [MainThread]: Command `dbt debug` failed at 10:43:01.312281 after 0.52 seconds
+[0m10:43:01.312575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fdfd810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd71490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd0ae00>]}
+[0m10:43:01.312785 [debug] [MainThread]: Flushing usage events
+[0m10:43:01.619052 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:43:47.460746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10599d010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067f7c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067f7b10>]}
+
+
+============================== 10:43:47.462803 | 236219c0-3d97-43ab-a354-ca0fdbe2317d ==============================
+[0m10:43:47.462803 [info ] [MainThread]: Running with dbt=1.9.2
+[0m10:43:47.463105 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/bryant/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m10:43:47.467045 [info ] [MainThread]: dbt version: 1.9.2
+[0m10:43:47.467208 [info ] [MainThread]: python version: 3.13.1
+[0m10:43:47.467350 [info ] [MainThread]: python path: /Users/bryant/Projects/venvs/venv_broses_dw/bin/python3.13
+[0m10:43:47.467472 [info ] [MainThread]: os info: macOS-15.2-arm64-arm-64bit-Mach-O
+[0m10:43:47.470631 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m10:43:47.802319 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.postgres'
+[0m10:43:47.802886 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.postgres'
+[0m10:43:47.803088 [info ] [MainThread]: Using profiles dir at /Users/bryant/.dbt
+[0m10:43:47.803218 [info ] [MainThread]: Using profiles.yml file at /Users/bryant/.dbt/profiles.yml
+[0m10:43:47.803350 [info ] [MainThread]: Using dbt_project.yml file at /Users/bryant/Projects/repositories/broses_dw/dbt_project.yml
+[0m10:43:47.803477 [info ] [MainThread]: Configuration:
+[0m10:43:47.803591 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:43:47.803710 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:43:47.803890 [info ] [MainThread]: Required dependencies:
+[0m10:43:47.804023 [debug] [MainThread]: Executing "git --help"
+[0m10:43:47.811750 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:43:47.812228 [debug] [MainThread]: STDERR: "b''"
+[0m10:43:47.812393 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:43:47.812528 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m10:43:47.812719 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m10:43:47.812832 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_bootcamp", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+Runtime Error
+  Credentials in profile "jaffle_shop", target "dev" invalid: Runtime Error
+    Could not find adapter type postgres!
+
+Runtime Error
+  Credentials in profile "my_dbt_project", target "dev" invalid: Runtime Error
+    Could not find adapter type postgres!
+
+
+[0m10:43:47.812947 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/bryant/Projects/repositories/broses_dw/dbt_project.yml> not found
+
+[0m10:43:47.814102 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.382686, "process_in_blocks": "0", "process_kernel_time": 0.14854, "process_mem_max_rss": "191184896", "process_out_blocks": "0", "process_user_time": 0.79858}
+[0m10:43:47.814317 [debug] [MainThread]: Command `dbt debug` failed at 10:43:47.814263 after 0.38 seconds
+[0m10:43:47.814545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116cfd810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116c6d490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116c06e00>]}
+[0m10:43:47.814804 [debug] [MainThread]: Flushing usage events
+[0m10:43:47.967098 [debug] [MainThread]: An error was encountered while trying to flush usage events

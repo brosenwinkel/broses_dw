@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: tunecore
+    database: broses-music-dw
+    schema: tunecore
+    tables:
+      - name: tunecore_sales
+ 
