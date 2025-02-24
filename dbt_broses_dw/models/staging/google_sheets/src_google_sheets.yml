@@ -7,3 +7,5 @@ sources:
     tables:
       - name: bluevine
       - name: distrokid
+      - name: misc_revenue
+      - name: misc_expenses

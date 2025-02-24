@@ -2,11 +2,10 @@ WITH expenses AS (
   
 SELECT
   date_trunc(time_period_start_date,month) AS time_period_start_date
-  , SUM(debits_usd) AS expenses_usd
-FROM {{ ref('stg_google_sheets__bluevine_transactions') }}
-WHERE LOWER(description) NOT LIKE '%transfer%'
-AND LOWER(description) NOT LIKE '%interest earned%'
+  , SUM(expense_amt) AS expense_amt
+FROM {{ ref('int_expenses') }}
 GROUP BY 1
+
 ), revenue_pre AS (
 
 SELECT
@@ -30,6 +29,14 @@ SELECT
   , SUM(total_earned_amt) AS total_earned_amt
 
 FROM {{ ref('stg_shopify__order') }}
+GROUP BY 1
+
+UNION ALL 
+
+SELECT
+  date_trunc(time_period_start_date, MONTH) AS time_period_start_date
+  , SUM(revenue_amt) AS total_earned_amt
+FROM {{ ref('stg_google_sheets__misc_revenue') }}
 GROUP BY 1
 
 ), revenue AS (
