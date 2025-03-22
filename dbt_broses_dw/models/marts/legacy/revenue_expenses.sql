@@ -43,7 +43,7 @@ GROUP BY 1
 
   SELECT
     time_period_start_date
-    , SUM(total_earned_amt) AS revenue_usd
+    , SUM(total_earned_amt) AS revenue_amt
   FROM revenue_pre
   GROUP BY 1  
 
@@ -61,8 +61,8 @@ GROUP BY 1
 
 SELECT
   coord.time_period_start_date
-  , e.expenses_usd
-  , r.revenue_usd
+  , e.expense_amt
+  , r.revenue_amt
 FROM coord
 LEFT JOIN expenses e
   USING (time_period_start_date)

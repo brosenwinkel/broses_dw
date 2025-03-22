@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: instagram
+    database: broses-music-dw
+    schema: instagram
+    tables:
+    - name: media_comment
+    - name: media_history
+    - name: media_insights
