@@ -32,7 +32,8 @@ jobs:
 
       - name: Create service account key file
         run: |
-          echo "${{ secrets.GOOGLE_CREDENTIALS }}" > gcp-key.json
+          printf "%s" "${{ secrets.GOOGLE_CREDENTIALS }}" > gcp-key.json
+
 
 
 
