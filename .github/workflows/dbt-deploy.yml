@@ -44,7 +44,7 @@ jobs:
           if [ ! -s dbt_broses_dw/gcp-key.json ]; then
             echo "❌ Service account key file is empty. Check GitHub Secret formatting."
             exit 1
-          fi
+          fi 
 
 
       - name: Create dbt profile
