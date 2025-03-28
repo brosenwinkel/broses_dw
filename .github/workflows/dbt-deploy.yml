@@ -49,10 +49,13 @@ jobs:
           echo "      keyfile: gcp-key.json" >> ~/.dbt/profiles.yml
 
       - name: Run dbt deps
+        working-directory: ./dbt_broses_dw
         run: dbt deps
 
       - name: Run dbt in prod
+        working-directory: ./dbt_broses_dw
         run: dbt run --target prod
 
       - name: Run dbt tests
+        working-directory: ./dbt_broses_dw
         run: dbt test --target prod
