@@ -14,7 +14,8 @@ jobs:
 
     env:
       DBT_TARGET: prod
-      GOOGLE_APPLICATION_CREDENTIALS: ${{ github.workspace }}/dbt_broses_dw/gcp-key.json
+      echo '${{ secrets.GOOGLE_CREDENTIALS }}' > dbt_broses_dw/gcp-key.json
+
 
     steps:
       - name: Checkout repo
