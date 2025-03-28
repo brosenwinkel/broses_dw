@@ -34,7 +34,7 @@ jobs:
         run: |
           echo "${{ secrets.GOOGLE_CREDENTIALS_B64 }}" | base64 --decode > dbt_broses_dw/gcp-key.json
 
-      - name: Debug: validate key file
+      - name: Debug validate key file
         run: |
           ls -l dbt_broses_dw/gcp-key.json
           head -n 5 dbt_broses_dw/gcp-key.json || echo "Key file empty!"
