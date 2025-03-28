@@ -1,7 +1,8 @@
 
 WITH media AS (
 SELECT
-        media_id
+        CAST(time_period_start_date AS DATE) AS time_period_start_date
+        , media_id
         , media_product_type
         , media_type
         , username
@@ -37,6 +38,7 @@ GROUP BY 1
 
 SELECT
         media.media_id
+        , media.time_period_start_date
         , media.media_product_type
         , media.media_type
         , media.username
