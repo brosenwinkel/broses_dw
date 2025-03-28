@@ -37,18 +37,16 @@ jobs:
       - name: Create dbt profile
         run: |
           mkdir -p ~/.dbt
-          cat > ~/.dbt/profiles.yml <<EOF
-dbt_broses_dw:  # 👈 replace with your dbt_project.yml name
-  target: prod
-  outputs:
-    prod:
-      type: bigquery
-      method: service-account
-      project: broses-music-dw  # 👈 replace with your actual GCP project ID
-      dataset: analytics             # 👈 or your actual prod dataset name
-      threads: 4
-      keyfile: gcp-key.json
-EOF
+          echo "dbt_broses_dw:" > ~/.dbt/profiles.yml
+          echo "  target: prod" >> ~/.dbt/profiles.yml
+          echo "  outputs:" >> ~/.dbt/profiles.yml
+          echo "    prod:" >> ~/.dbt/profiles.yml
+          echo "      type: bigquery" >> ~/.dbt/profiles.yml
+          echo "      method: service-account" >> ~/.dbt/profiles.yml
+          echo "      project: broses-music-dw" >> ~/.dbt/profiles.yml
+          echo "      dataset: analytics" >> ~/.dbt/profiles.yml
+          echo "      threads: 4" >> ~/.dbt/profiles.yml
+          echo "      keyfile: gcp-key.json" >> ~/.dbt/profiles.yml
 
       - name: Run dbt deps
         run: dbt deps
