@@ -32,7 +32,8 @@ jobs:
 
       - name: Create service account key file
         run: |
-          echo '${{ secrets.GOOGLE_CREDENTIALS }}' > dbt_broses_dw/gcp-key.json
+          echo "${{ secrets.GOOGLE_CREDENTIALS }}" > dbt_broses_dw/gcp-key.json
+
 
 
       - name: Create dbt profile
