@@ -24,11 +24,8 @@ SELECT
         , max(reel_reach) AS reel_reach
         , max(reel_saved) AS reel_saved
         , max(video_photo_engagement) AS video_photo_engagement
-        , max(reel_aggregated_all_plays_count) AS reel_aggregated_all_plays_count
-        , max(reel_clips_replays_count) AS reel_clips_replays_count
         , max(reel_comments) AS reel_comments
         , max(reel_likes) AS reel_likes
-        , max(reel_plays) AS reel_plays
         , max(reel_shares) AS reel_shares
         , max(reel_total_interactions) AS reel_total_interactions
 FROM {{ ref('src_instagram__media_insights') }}
@@ -53,11 +50,8 @@ SELECT
         , insights.reel_reach
         , insights.reel_saved
         , insights.video_photo_engagement
-        , insights.reel_aggregated_all_plays_count
-        , insights.reel_clips_replays_count
         , insights.reel_comments
         , insights.reel_likes
-        , insights.reel_plays
         , insights.reel_shares
         , insights.reel_total_interactions
 FROM media
