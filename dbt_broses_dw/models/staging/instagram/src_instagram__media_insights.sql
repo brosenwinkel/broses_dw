@@ -1,4 +1,7 @@
+WITH media_insights AS (
 
+        SELECT * FROM {{ source('instagram', 'media_insights') }}
+)
 SELECT
         id AS media_id
         , like_count
@@ -21,12 +24,9 @@ SELECT
         , story_taps_back
         , story_taps_forward
         , story_swipe_forward
-        , reel_aggregated_all_plays_count
-        , reel_clips_replays_count
         , reel_comments
         , reel_likes
-        , reel_plays
         , reel_shares
         , reel_total_interactions
         
-FROM {{ source('instagram', 'media_insights') }}
+FROM media_insights
