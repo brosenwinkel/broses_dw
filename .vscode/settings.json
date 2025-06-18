@@ -1,0 +1,4 @@
+{
+  "dbt.projectRoot": "dbt_broses_dw",  
+  "dbt.cliPath": "/Users/bryant/Projects/venvs/venv_broses_dw/bin/dbt" 
+}
