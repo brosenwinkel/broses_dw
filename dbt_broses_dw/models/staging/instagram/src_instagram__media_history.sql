@@ -15,3 +15,5 @@ SELECT
         , media_url
         , thumbnail_url
 FROM {{ source('instagram', 'media_history') }}
+WHERE owner_id IS NOT NULL 
+OR (owner_id IS NULL AND media_product_type = 'STORY')
